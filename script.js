@@ -19,8 +19,8 @@ async function getWeather(city) {
             document.getElementById('temperature').textContent = `${temperature}°C`;
             document.getElementById('description').textContent = weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1);
             document.getElementById('date').textContent = formattedDate;
+            document.getElementById('searched-city').textContent = city;
 
-            // Call functions to get additional weather info and forecast
             getWeatherForecast(city);
             getAdditionalWeatherInfo(city);
         } else {
@@ -57,7 +57,6 @@ async function getWeatherForecast(city) {
                 `;
             });
 
-            // Ensure day-1 starts from the next day
             const today = new Date();
             forecastData.slice(0, 6).forEach((item, index) => {
                 const date = new Date(today);
@@ -152,5 +151,4 @@ function getCurrentLocationWeather() {
     }
 }
 
-// Initial calls
 getCurrentLocationWeather();
