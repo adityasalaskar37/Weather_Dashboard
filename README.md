@@ -23,42 +23,9 @@ Welcome to our weather forecasting app project repository! this project is desig
 
 - **Member**: Aditya Salaskar
 
-## Getting started
-
-### Prerequisites
-
-- node.js
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/weather-forecasting-app.git
-    cd weather-forecasting-app
-    ```
-
-2. Install dependencies:
-    ```sh
-    npm install
-    # or
-    yarn install
-    ```
-
-### Running the application
-
-1. Start the development server:
-   ```sh
-    npm start
-    # or
-    yarn start
-    ```
-
-2. Open your browser and navigate to `http://localhost:3000` to see the application in action.
-
 ## Deployment
 
-- The app can be deployed to vercel, netlify, or github pages by following their respective deployment guides.
+- The website application is deployed to github pages by following their respective deployment guides.
 
 ## Contributing
 
