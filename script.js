@@ -91,16 +91,12 @@ async function getAdditionalWeatherInfo(city) {
             const windSpeed = data.wind.speed;
             const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString('en-US');
             const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString('en-US');
-            const uvIndex = 'N/A'; // UV index might not be available in the current API response
-            const airQualityIndex = 'N/A'; // Air quality index might not be available in the current API response
             const visibility = data.visibility;
 
             document.getElementById('humidity').textContent = `${humidity}%`;
             document.getElementById('wind-speed').textContent = `${windSpeed} m/s`;
             document.getElementById('sunrise').textContent = sunrise;
             document.getElementById('sunset').textContent = sunset;
-            document.getElementById('uv-index').textContent = uvIndex;
-            document.getElementById('air-quality-index').textContent = airQualityIndex;
             document.getElementById('visibility').textContent = `${visibility} meters`;
         } else {
             console.error('Error fetching additional weather info:', data.message);
